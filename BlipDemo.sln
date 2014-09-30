@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlipLib", "BlipDemo\BlipLib.csproj", "{2AC95700-B0AF-4D27-985A-B916701D6860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlipDemoApp", "BlipDemoApp\BlipDemoApp.csproj", "{CFF5604B-AD4F-4253-98F2-B68445AFBCED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC95700-B0AF-4D27-985A-B916701D6860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC95700-B0AF-4D27-985A-B916701D6860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC95700-B0AF-4D27-985A-B916701D6860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC95700-B0AF-4D27-985A-B916701D6860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF5604B-AD4F-4253-98F2-B68445AFBCED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF5604B-AD4F-4253-98F2-B68445AFBCED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF5604B-AD4F-4253-98F2-B68445AFBCED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF5604B-AD4F-4253-98F2-B68445AFBCED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = BlipDemoApp\BlipDemoApp.csproj
+	EndGlobalSection
+EndGlobal

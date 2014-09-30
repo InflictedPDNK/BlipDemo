@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AC95700-B0AF-4D27-985A-B916701D6860}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BlipLib</RootNamespace>
+    <AssemblyName>BlipLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interface\IBlipCore.cs" />
+    <Compile Include="Interface\IProvider.cs" />
+    <Compile Include="DataTypes\CommonTypes.cs" />
+    <Compile Include="Interface\IBlip.cs" />
+    <Compile Include="DataTypes\Blip.cs" />
+    <Compile Include="Interface\IBlipUIClient.cs" />
+    <Compile Include="Classes\BlipCore.cs" />
+    <Compile Include="Classes\DefaultBlipUIClient.cs" />
+    <Compile Include="Classes\Utility.cs" />
+    <Compile Include="Classes\BaseProvider.cs" />
+    <Compile Include="Classes\ColourLoversProvider.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="DataTypes\" />
+    <Folder Include="Classes\" />
+  </ItemGroup>
+</Project>

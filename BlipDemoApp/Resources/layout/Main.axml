@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/MainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+   <TextView
+	android:id="@+id/WelcomeText"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+  	android:text="Touch me!"
+   	android:textColor="#AAAAAA"
+   	android:textSize="36sp"
+   	android:layout_centerInParent="true"/>
+</RelativeLayout>
